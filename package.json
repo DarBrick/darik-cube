@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:github": "VITE_BASE_PATH=/darik-cube/ npm run build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
