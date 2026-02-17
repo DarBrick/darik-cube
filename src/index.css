@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+
+@theme {
+  --font-rokkitt: Rokkitt, serif;
+  --font-lato: Lato, sans-serif;
+  --color-primary: #8EAAB2;
+  --color-secondary: #E6D2AC;
+  --color-accent: #C29E79;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in;
+}

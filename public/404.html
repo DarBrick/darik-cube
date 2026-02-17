@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/darikcube.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="darikcube - Software Engineer & Creator. Explore my portfolio of web applications and projects." />
+    <title>darikcube</title>
+    <script>
+      // Redirect to static files if they exist (robots.txt, sitemap.xml, etc.)
+      (function() {
+        var path = window.location.pathname;
+        var staticFiles = ['/robots.txt', '/sitemap.xml'];
+        
+        if (staticFiles.includes(path)) {
+          // Try to fetch the file, if it exists, redirect properly
+          fetch(path, { method: 'HEAD' })
+            .then(function(response) {
+              if (response.ok) {
+                window.location.replace(path);
+              }
+            });
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

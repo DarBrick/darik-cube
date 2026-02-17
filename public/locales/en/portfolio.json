@@ -1,0 +1,41 @@
+{
+  "title": "Portfolio",
+  "subtitle": "Projects I have designed and deployed",
+  "visitProject": "Visit Project",
+  "comingSoon": "Coming soon",
+  "learnMore": "Learn more",
+  "personalProjectsTitle": "Personal Projects",
+  "professionalExperienceTitle": "Professional Experience",
+  "projects": {
+    "padelboy": {
+      "name": "PadelBoy",
+      "description": "An intuitive tool for managing Padel tournaments. It supports popular formats (Americano and Mexicano), offers automatic match generation, smart multi-court scheduling, and historical player statistics. The app works offline directly in the browser with no registration required."
+    },
+    "coop": {
+      "name": "Coop",
+      "description": "An application for energy cooperatives designed to analyze energy flows and ensure the equitable distribution of both energy and finances among members."
+    }
+  },
+  "professional": {
+    "statsperform": {
+      "company": "Stats Perform",
+      "role": "Senior Engineer & Team Lead",
+      "description": "Led the development of automated sports commentary for the Opta Stream and Opta Live platforms. Managed the team and architected real-time sports data processing systems."
+    },
+    "flex": {
+      "company": "Flex",
+      "role": "Full Stack Engineer",
+      "description": "Developed an internal Bill of Materials (BOM) optimization tool, empowering factory engineers and procurement teams to make data-driven decisions and conduct informed negotiations."
+    },
+    "thomsonreuters": {
+      "company": "Thomson Reuters",
+      "role": "Software Engineer",
+      "description": "Built automated data collection systems for energy market analysis and reporting."
+    },
+    "asseco": {
+      "company": "Asseco",
+      "role": "Software QA Engineer",
+      "description": "Ensured quality for the P1 project—a multi-company government initiative aimed at centralizing and digitalizing healthcare systems in Poland."
+    }
+  }
+}

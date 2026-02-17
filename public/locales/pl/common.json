@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Start",
+    "portfolio": "Portfolio",
+    "about": "O mnie",
+    "toggleMenu": "Menu"
+  },
+  "accessibility": {
+    "logo": "darikcube",
+    "logoAlt": "logo darikcube"
+  },
+  "footer": {
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "builtWith": "Stworzone z użyciem"
+  }
+}

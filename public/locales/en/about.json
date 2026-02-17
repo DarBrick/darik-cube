@@ -1,0 +1,26 @@
+{
+  "title": "About me",
+  "contact": {
+    "title": "Get in touch",
+    "github": "GitHub Profile",
+    "linkedin": "LinkedIn Profile"
+  },
+  "sections": {
+    "journey": {
+      "title": "My Software Engineering Journey",
+      "content": "With over a decade of experience in the industry, I have had the privilege of working on diverse projects across a wide range of technologies. From dynamic startups to complex enterprise systems, I build scalable applications that solve real-world problems and deliver exceptional user experiences."
+    },
+    "mathematical": {
+      "title": "Mathematical Foundation",
+      "content": "My approach to technology is deeply rooted in my mathematical background, which taught me to view systems design through a lens of logic and analytics. This foundation allows me to find elegant solutions even for the most complex technical challenges."
+    },
+    "sports": {
+      "title": "Sports & Padel Passion",
+      "content": "Beyond coding, I am a sports enthusiast. While I have explored many disciplines over the years, Padel has become my true passion. This blend of love for sports and technology led to the creation of PadelBoy—a tool designed to help the community organize professional-grade tournaments."
+    },
+    "family": {
+      "title": "Personal Life",
+      "content": "When I step away from the keyboard and off the court, I am a proud father of three. Parenthood keeps me grounded, teaches me patience, and serves as a constant reminder that technology’s ultimate purpose is to make life better for everyone."
+    }
+  }
+}

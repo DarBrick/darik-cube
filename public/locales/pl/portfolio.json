@@ -1,0 +1,39 @@
+{
+  "title": "Portfolio",
+  "subtitle": "Wybrane projekty, które zaprojektowałem i wdrożyłem",
+  "visitProject": "Odwiedź projekt",  "comingSoon": "Wkrótce",  "learnMore": "Dowiedz się więcej",
+  "personalProjectsTitle": "Projekty osobiste",
+  "professionalExperienceTitle": "Doświadczenie zawodowe",
+  "projects": {
+    "padelboy": {
+      "name": "PadelBoy",
+      "description": "Intuicyjne narzędzie do zarządzania turniejami padla. Obsługuje popularne formaty (Americano i Mexicano), oferuje automatyczne generowanie meczów, inteligentny harmonogram na wiele kortów oraz statystyki graczy. Aplikacja działa w trybie offline bezpośrednio w przeglądarce, bez konieczności rejestracji."
+    },
+    "coop": {
+      "name": "Coop",
+      "description": "Zaawansowana aplikacja dla spółdzielni energetycznych. Analizuje przepływy energii, umożliwiając sprawiedliwy i transparentny podział zasobów oraz finansów pomiędzy wszystkich członków wspólnoty."
+    }
+  },
+  "professional": {
+    "statsperform": {
+      "company": "Stats Perform",
+      "role": "Senior Engineer & Team Lead",
+      "description": "Kierowałem rozwojem systemów automatycznego generowania komentarzy sportowych dla platform Opta Stream i Opta Live. Zarządzałem zespołem inżynierów oraz projektowałem architekturę rozwiązań przetwarzających dane sportowe w czasie rzeczywistym."
+    },
+    "flex": {
+      "company": "Flex",
+      "role": "Full Stack Engineer",
+      "description": "Rozwijałem wewnętrzne narzędzie do optymalizacji zestawień materiałowych (BOM), wspierając inżynierów i działy zakupowe w podejmowaniu decyzji opartych na danych oraz prowadzeniu skutecznych negocjacji."
+    },
+    "thomsonreuters": {
+      "company": "Thomson Reuters",
+      "role": "Software Engineer",
+      "description": "Projektowałem i wdrażałem zautomatyzowane systemy gromadzenia danych, służące do głębokiej analizy oraz raportowania trendów na rynku energetycznym."
+    },
+    "asseco": {
+      "company": "Asseco",
+      "role": "Software QA Engineer",
+      "description": "Odpowiadałem za zapewnienie jakości w strategicznym projekcie P1 – ogólnopolskiej inicjatywie rządowej mającej na celu cyfryzację i centralizację systemów ochrony zdrowia."
+    }
+  }
+}

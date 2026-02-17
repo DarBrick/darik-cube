@@ -1,0 +1,26 @@
+{
+  "title": "O mnie",
+  "contact": {
+    "title": "Kontakt",
+    "github": "Profil GitHub",
+    "linkedin": "Profil LinkedIn"
+  },
+  "sections": {
+    "journey": {
+      "title": "Moja droga w inżynierii oprogramowania",
+      "content": "Dzięki ponad dziesięcioletniemu doświadczeniu w branży, miałem okazję realizować różnorodne projekty w wielu technologiach. Od dynamicznych startupów po zaawansowane systemy korporacyjne – tworzę skalowalne aplikacje, które rozwiązują realne problemy i zapewniają świetne doświadczenia użytkownikom."
+    },
+    "mathematical": {
+      "title": "Fundamenty matematyczne",
+      "content": "Moje podejście do technologii wyrasta z wykształcenia matematycznego, które nauczyło mnie patrzeć na projektowanie systemów przez pryzmat logiki i analityki. Te fundamenty pozwalają mi znajdować eleganckie rozwiązania nawet dla najbardziej złożonych wyzwań."
+    },
+    "sports": {
+      "title": "Sport i pasja do padla",
+      "content": "Poza kodowaniem moją wielką pasją jest sport. Przez lata próbowałem różnych dyscyplin, ale to padel stał się moją największą pasją. Z tego połączenia miłości do sportu i technologii narodził się PadelBoy – narzędzie, które pomaga społeczności graczy organizować profesjonalne turnieje."
+    },
+    "family": {
+      "title": "Życie prywatne",
+      "content": "Kiedy odkładam klawiaturę i schodzę z kortu, spełniam się jako dumny tata trójki dzieci. Rodzina uczy mnie cierpliwości, pozwala zachować balans i przypomina, że technologia ma sens tylko wtedy, gdy realnie ułatwia życie ludziom."
+    }
+  }
+}
