@@ -6,6 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="darikcube - Software Engineer & Creator. Explore my portfolio of web applications and projects." />
     <title>darikcube</title>
+    <script>
+      // Auto-detect and set base path for proper resource loading
+      (function() {
+        var path = window.location.pathname;
+        var segments = path.split('/').filter(Boolean);
+        
+        // Known app routes
+        var appRoutes = ['portfolio', 'about', 'index.html'];
+        
+        // If first segment is not an app route and path doesn't end with known routes,
+        // it's likely a base path (e.g., /darik-cube/)
+        if (segments.length > 0 && !appRoutes.includes(segments[0])) {
+          var basePath = '/' + segments[0] + '/';
+          // Set base tag for resource loading
+          var base = document.createElement('base');
+          base.href = basePath;
+          document.head.insertBefore(base, document.head.firstChild);
+          // Store for React Router
+          window.__BASE_PATH__ = basePath;
+        } else {
+          window.__BASE_PATH__ = '/';
+        }
+      })();
+    </script>
+    <script>
+      // Handle redirect from 404.html for SPA routes (GitHub Pages compatibility)
+      (function() {
+        var redirect = sessionStorage.getItem('redirect');
+        if (redirect && redirect !== window.location.href) {
+          sessionStorage.removeItem('redirect');
+          window.history.replaceState(null, '', redirect.replace(window.location.origin, ''));
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

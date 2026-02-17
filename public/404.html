@@ -7,19 +7,23 @@
     <meta name="description" content="darikcube - Software Engineer & Creator. Explore my portfolio of web applications and projects." />
     <title>darikcube</title>
     <script>
-      // Redirect to static files if they exist (robots.txt, sitemap.xml, etc.)
+      // GitHub Pages SPA redirect handler
+      // Static files (robots.txt, sitemap.xml, etc.) are served directly and won't hit this page
+      // This script only handles SPA routes that need to be redirected to index.html
       (function() {
         var path = window.location.pathname;
-        var staticFiles = ['/robots.txt', '/sitemap.xml'];
         
-        if (staticFiles.includes(path)) {
-          // Try to fetch the file, if it exists, redirect properly
-          fetch(path, { method: 'HEAD' })
-            .then(function(response) {
-              if (response.ok) {
-                window.location.replace(path);
-              }
-            });
+        // List of static file extensions and paths that should never be redirected to SPA
+        var staticExtensions = ['.txt', '.xml', '.json', '.ico', '.svg', '.png', '.jpg', '.jpeg', '.gif', '.pdf'];
+        var isStaticFile = staticExtensions.some(function(ext) {
+          return path.endsWith(ext);
+        });
+        
+        // If it's a static file, don't redirect - let it 404 naturally or be served
+        if (!isStaticFile) {
+          // For SPA routes, redirect to index.html with the path in session storage
+          sessionStorage.setItem('redirect', window.location.href);
+          window.location.replace('/');
         }
       })();
     </script>
