@@ -1,4 +1,9 @@
 {
+  "pageTitle": {
+    "home": "darikcube - Software Engineer & Creator",
+    "portfolio": "Portfolio - darikcube",
+    "about": "About - darikcube"
+  },
   "nav": {
     "home": "Home",
     "portfolio": "Portfolio",

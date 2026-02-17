@@ -1,4 +1,9 @@
 {
+  "pageTitle": {
+    "home": "darikcube - Inżynier Oprogramowania i Twórca",
+    "portfolio": "Portfolio - darikcube",
+    "about": "O mnie - darikcube"
+  },
   "nav": {
     "home": "Start",
     "portfolio": "Portfolio",
