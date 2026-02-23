@@ -20,5 +20,10 @@
     "linkedin": "LinkedIn",
     "rights": "Wszelkie prawa zastrzeżone.",
     "builtWith": "Stworzone z użyciem"
+  },
+  "notFound": {
+    "title": "Strona nie została znaleziona",
+    "description": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+    "backHome": "Powrót do strony głównej"
   }
 }

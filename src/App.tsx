@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import Portfolio from './pages/Portfolio/Portfolio';
 import About from './pages/About/About';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -22,9 +23,14 @@ function App() {
       const path = location.pathname;
       if (path === '/portfolio') return t('pageTitle.portfolio');
       if (path === '/about') return t('pageTitle.about');
-      return t('pageTitle.home');
+      if (path === '/') return t('pageTitle.home');
+      // For 404 pages, let the NotFound component handle the title
+      return null;
     };
-    document.title = getPageTitle();
+    const title = getPageTitle();
+    if (title) {
+      document.title = title;
+    }
   }, [location.pathname, t]);
 
   // Scroll to top on route change
@@ -39,7 +45,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about" element={<About />} />
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<NotFound />}/>
       </Routes>
       <Footer />
     </>

@@ -20,5 +20,10 @@
     "linkedin": "LinkedIn",
     "rights": "All rights reserved.",
     "builtWith": "Built with"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home"
   }
 }

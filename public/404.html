@@ -4,32 +4,143 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/darikcube.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="darikcube - Software Engineer & Creator. Explore my portfolio of web applications and projects." />
-    <title>darikcube</title>
+    <meta name="description" content="Page not found - darikcube" />
+    <meta name="robots" content="noindex, follow" />
+    <title>404 - Page Not Found | darikcube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Lato', sans-serif;
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        color: #E6D2AC;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      
+      .container {
+        text-align: center;
+        max-width: 600px;
+        animation: fadeIn 0.6s ease-in;
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
+      h1 {
+        font-family: 'Rokkitt', serif;
+        font-size: 8rem;
+        font-weight: 700;
+        color: #8EAAB2;
+        margin-bottom: 1rem;
+        line-height: 1;
+      }
+      
+      h2 {
+        font-family: 'Rokkitt', serif;
+        font-size: 2rem;
+        font-weight: 400;
+        color: #C29E79;
+        margin-bottom: 1.5rem;
+      }
+      
+      p {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        color: #E6D2AC;
+        opacity: 0.9;
+      }
+      
+      .button {
+        display: inline-block;
+        padding: 12px 32px;
+        background-color: #8EAAB2;
+        color: #1a1a1a;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        font-size: 1rem;
+      }
+      
+      .button:hover {
+        background-color: #C29E79;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(142, 170, 178, 0.3);
+      }
+      
+      .code {
+        font-family: monospace;
+        font-size: 0.875rem;
+        color: #8EAAB2;
+        margin-top: 2rem;
+        opacity: 0.6;
+      }
+      
+      @media (max-width: 640px) {
+        h1 {
+          font-size: 5rem;
+        }
+        
+        h2 {
+          font-size: 1.5rem;
+        }
+        
+        p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>404</h1>
+      <h2>Page Not Found</h2>
+      <p>The page you're looking for doesn't exist or has been moved.</p>
+      <a href="/" class="button">Back to Home</a>
+      <p class="code">ERROR_404_PAGE_NOT_FOUND</p>
+    </div>
+    
     <script>
-      // GitHub Pages SPA redirect handler
-      // Static files (robots.txt, sitemap.xml, etc.) are served directly and won't hit this page
-      // This script only handles SPA routes that need to be redirected to index.html
+      // GitHub Pages SPA redirect handler - only for valid SPA routes
       (function() {
         var path = window.location.pathname;
         
-        // List of static file extensions and paths that should never be redirected to SPA
-        var staticExtensions = ['.txt', '.xml', '.json', '.ico', '.svg', '.png', '.jpg', '.jpeg', '.gif', '.pdf'];
+        // List of static file extensions that should show 404
+        var staticExtensions = ['.txt', '.xml', '.json', '.ico', '.svg', '.png', '.jpg', '.jpeg', '.gif', '.pdf', '.html', '.css', '.js'];
         var isStaticFile = staticExtensions.some(function(ext) {
           return path.endsWith(ext);
         });
         
-        // If it's a static file, don't redirect - let it 404 naturally or be served
-        if (!isStaticFile) {
-          // For SPA routes, redirect to index.html with the path in session storage
+        // Known SPA routes in your application
+        var validSpaRoutes = ['/', '/portfolio', '/about'];
+        var isSpaRoute = validSpaRoutes.some(function(route) {
+          return path === route || path.startsWith(route + '/');
+        });
+        
+        // Only redirect if it's a valid SPA route AND not a static file
+        if (!isStaticFile && isSpaRoute) {
           sessionStorage.setItem('redirect', window.location.href);
-          window.location.replace('/');
+          // Small delay to allow crawlers to see the 404 content
+          setTimeout(function() {
+            window.location.replace('/');
+          }, 100);
         }
+        // Otherwise, show the 404 page (for truly not found pages and static files)
       })();
     </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
